@@ -1,0 +1,37 @@
+body{
+	
+	background-image: linear-gradient(to top, rgba(211,204,227,.9) 80%, rgba(91,89,94,.9)),url("bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.logoname{
+	max-width: 25em;
+	
+  	height: 5em;
+  	padding-bottom: 10px;
+
+}
+
+@media (max-width: 770px){
+	.container{
+		margin: 0 10%;
+	}
+
+	.logoname{
+		width: 120%;
+	}
+	.presentstatus{
+		font-size: 130%;
+	}
+}

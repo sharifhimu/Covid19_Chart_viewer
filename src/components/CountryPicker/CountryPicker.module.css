@@ -1,0 +1,19 @@
+.formControl{
+	width: 30%;
+	margin-bottom: 30px !important;
+	background-color: white;
+	border-radius: .2rem;
+	border-color: black !important;
+	transition: .2s ease-in;
+	
+}
+
+.countrytext{
+
+}
+
+@media (max-width: 770px){
+	.countrytext{
+		font-size: 10px !important;
+	}
+}
