@@ -71,6 +71,7 @@ export const fetchCountries = async () => {
 
  export const fetchBDinfo = async () => {
 	try{
+		
 		const {data: {timelineitems: { total_cases }}} = await axios.get(`https://api.thevirustracker.com/free-api?countryTimeline=BD`);
 
 		const modifiedData = {total_cases}
