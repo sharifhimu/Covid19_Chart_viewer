@@ -17,3 +17,9 @@
 		font-size: 10px !important;
 	}
 }
+
+@media (max-width: 400px){
+	.countrytext{
+		font-size: 8px !important;
+	}
+}

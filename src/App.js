@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 
 import {Cards,Charts,CountryPicker} from './components';
 import styles from './App.module.css';
-import {fetchData, fetchData2} from './api';
+import {fetchData, fetchData2, fetchBDinfo} from './api';
 
 import Charts2 from './components/Charts/Charts2';
 import Cards2 from './components/Cards/Cards2';
@@ -30,6 +30,9 @@ async  componentDidMount(){
 
     this.setState({data2: fetchedData2});
 
+    const fetchedBD = await fetchBDinfo();
+    this.setState({data3: fetchBDinfo});
+    console.log(fetchedBD);
 
   }
 
